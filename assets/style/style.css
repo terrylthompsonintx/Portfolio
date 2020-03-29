@@ -1,16 +1,24 @@
 /*Whole document styling begins*/
+:root {
+    --main-font-color:#191970 ;
+    --main-bg-color: #E6E6FA;
+    --header-footer-bg-color:#6495ED ;
+    --header-footer-font-color:#F0F8FF ;
+  }
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
-
-
 .navigation, .aboutme, .work, .contactme{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 
 }
 .navigation ul, .contactme ul {
@@ -18,18 +26,80 @@
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content:space-between;
 }
+.navigation, .contactme {
+    height: 100px;
+    background-color: var(--header-footer-bg-color);
+    color: var(--header-footer-font-color);
+}
+.aboutme, .work{
+    background-color: var(--main-bg-color);
+    color: var(--main-font-color);
+}
+li,h1,h2{
+    padding: 20px;
+}
+h1 {
+    font-size: 24px;
+}
+h2{
+    font-size: 20px;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: var(--header-footer-font-color);
+  }
 /*Navigation styling begins*/
 
 /*Hero styling begins*/
 .hero img{
     border-radius: 15px;
-    
 }
 .hero {
-    background-image: url('./assets/img/herocropped.jpg');
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url('../img/heroCropped.png');
+    background-size: cover;
+    height: 700px;
+}
+.hero-content{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.hero-content p{
+    background-color: var(--header-footer-bg-color);
+    color: var(--header-footer-font-color);
 }
 /*aboutme styling begins*/
-
-
+/* Work styling begins*/
+.grid-container {
+    display: grid;
+    grid-column-gap: 5px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+  }
+  .item1 {
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 1; 
+    grid-row-end: 3; 
+  }
+  .item2 {
+    grid-column-start: 3; 
+    grid-column-end: 3; 
+    grid-row-start: 1; 
+    grid-row-end: 1; 
+  }
+  .item3 {
+    grid-column-start: 2; 
+    grid-column-end: 2; 
+    grid-row-start: 1; 
+    grid-row-end: 1; 
+  }
 /*Footer styling begins */
