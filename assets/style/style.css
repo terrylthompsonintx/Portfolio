@@ -6,7 +6,6 @@
     --header-footer-font-color:#F0F8FF ;
     --highlight-text-color:#000080;
 }
-
 * {
     box-sizing: border-box;
     padding: 0px;
@@ -18,9 +17,8 @@
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-
 }
 .navigation ul, .contactme ul {
     list-style-type: none;
@@ -40,7 +38,7 @@
     height: 700px;
 }
 li,h1,h2{
-    padding: 20px;
+    padding: 30px;
 }
 h1 {
     font-size: 24px;
@@ -52,15 +50,26 @@ a:link, a:visited {
     text-decoration: none;
     color: var(--header-footer-font-color);
 }
+.vl {
+    border-left: 6px solid var(--header-footer-bg-color);
+    height: 50%;
+    padding-right: 10px;
+  }
 /*Whole document styling ends*/
 
 /*Navigation styling begins*/
+.navigation {
+    position:sticky;
+    top: 0;
+    width: 100%
+}
+
 .navigation a:hover{
     font-size: 20px;
     font-weight: bold;
     background-color:var(--highlight-text-color);
 }
-/*Navigation styling begins*/
+/*Navigation styling ends*/
 
 /*Hero styling begins*/
 .hero img{
@@ -88,18 +97,22 @@ a:link, a:visited {
     margin-top: 20px;
     padding-right: 20px;
 }
-/*Hero styling begins*/
+/*Hero styling ends*/
 
 /*aboutme styling begins*/
 .aboutme p{
     padding-right: 20px;
+    max-width: 60%;
 }
-/*aboutme styling ends*/
 .aboutme {
     display:flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
 }
+
+/*aboutme styling ends*/
+
 /* Work styling begins*/
 .grid-container {
     display: grid;
@@ -135,6 +148,5 @@ a:link, a:visited {
 /*Footer styling begins */
 .contactme a:hover{
     background-color:var(--highlight-text-color);
-    
 }
 /*Footer styling endsx */
