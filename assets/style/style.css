@@ -4,20 +4,21 @@
     --main-bg-color: #E6E6FA;
     --header-footer-bg-color:#6495ED ;
     --header-footer-font-color:#F0F8FF ;
-  }
+    --highlight-text-color:#000080;
+}
 
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
-.navigation, .aboutme, .work, .contactme{
+.navigation, .work, .contactme{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
 }
@@ -36,6 +37,7 @@
 .aboutme, .work{
     background-color: var(--main-bg-color);
     color: var(--main-font-color);
+    height: 700px;
 }
 li,h1,h2{
     padding: 20px;
@@ -49,7 +51,15 @@ h2{
 a:link, a:visited {
     text-decoration: none;
     color: var(--header-footer-font-color);
-  }
+}
+/*Whole document styling ends*/
+
+/*Navigation styling begins*/
+.navigation a:hover{
+    font-size: 20px;
+    font-weight: bold;
+    background-color:var(--highlight-text-color);
+}
 /*Navigation styling begins*/
 
 /*Hero styling begins*/
@@ -75,20 +85,38 @@ a:link, a:visited {
 .hero-content p{
     background-color: var(--header-footer-bg-color);
     color: var(--header-footer-font-color);
+    margin-top: 20px;
+    padding-right: 20px;
 }
+/*Hero styling begins*/
+
 /*aboutme styling begins*/
+.aboutme p{
+    padding-right: 20px;
+}
+/*aboutme styling ends*/
+.aboutme {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
 /* Work styling begins*/
 .grid-container {
     display: grid;
-    grid-column-gap: 5px;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 2fr 1fr;
+    padding-right: 20px;
+    height: 400px;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(2, 200px);
+  }
+  .work img{
+      max-width: 100%;
+      max-height: 100%;
   }
   .item1 {
     grid-column-start: 1; 
-    grid-column-end: 2; 
+    grid-column-end: 3; 
     grid-row-start: 1; 
-    grid-row-end: 3; 
+    grid-row-end: 2; 
   }
   .item2 {
     grid-column-start: 3; 
@@ -97,9 +125,16 @@ a:link, a:visited {
     grid-row-end: 1; 
   }
   .item3 {
-    grid-column-start: 2; 
-    grid-column-end: 2; 
-    grid-row-start: 1; 
-    grid-row-end: 1; 
+    grid-column-start: 3; 
+    grid-column-end: 3; 
+    grid-row-start: 2; 
+    grid-row-end: 2; 
   }
+/* Work styling ends*/
+
 /*Footer styling begins */
+.contactme a:hover{
+    background-color:var(--highlight-text-color);
+    
+}
+/*Footer styling endsx */
