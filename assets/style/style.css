@@ -94,8 +94,9 @@ a:link, a:visited {
 .hero-content p{
     background-color: var(--header-footer-bg-color);
     color: var(--header-footer-font-color);
-    margin-top: 20px;
-    padding-right: 20px;
+    margin-top: 24px;
+    margin-right: 20px;
+    font-size: 20px;
 }
 /*Hero styling ends*/
 
@@ -103,6 +104,7 @@ a:link, a:visited {
 .aboutme p{
     padding-right: 20px;
     max-width: 60%;
+    
 }
 .aboutme {
     display:flex;
