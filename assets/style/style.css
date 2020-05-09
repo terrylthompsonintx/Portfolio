@@ -1,8 +1,8 @@
 /*Whole document styling begins*/
 :root {
     --main-font-color:#191970 ;
-    --main-bg-color: #E6E6FA;
-    --header-footer-bg-color:#6495ED ;
+    --main-bg-color: rgb(203, 203, 207);
+    --header-footer-bg-color:rgb(129, 164, 228) ;
     --header-footer-font-color:#F0F8FF ;
     --highlight-text-color:#000080;
 }
@@ -118,10 +118,11 @@ a:link, a:visited {
 /* Work styling begins*/
 .grid-container {
     display: grid;
-    padding-right: 20px;
+    
     height: 400px;
-    grid-template-columns: repeat(3, 200px);
-    grid-template-rows: repeat(2, 200px);
+    grid-gap: 20px;
+    grid-template-columns: repeat(5, 1fr );
+    grid-template-rows: repeat(6, 100px);
   }
   .work img{
       max-width: 100%;
@@ -130,24 +131,60 @@ a:link, a:visited {
   .item1 {
     grid-column-start: 1; 
     grid-column-end: 3; 
-    grid-row-start: 1; 
-    grid-row-end: 2; 
+    grid-row-start: 2; 
+    grid-row-end: 4; 
   }
   .item2 {
     grid-column-start: 3; 
-    grid-column-end: 3; 
+    grid-column-end: 4; 
     grid-row-start: 1; 
-    grid-row-end: 1; 
+    grid-row-end: 2; 
   }
   .item3 {
-    grid-column-start: 3; 
-    grid-column-end: 3; 
-    grid-row-start: 2; 
+    grid-column-start: 4; 
+    grid-column-end: 5; 
+    grid-row-start: 1; 
     grid-row-end: 2; 
+  }
+  .item4 {
+    grid-column-start: 3; 
+    grid-column-end: 4; 
+    grid-row-start: 2; 
+    grid-row-end: 3; 
+  } 
+  .item5 {
+    grid-column-start: 4; 
+    grid-column-end: 5; 
+    grid-row-start: 2; 
+    grid-row-end: 3; 
+  }
+  .item6 {
+    grid-column-start: 3; 
+    grid-column-end: 4; 
+    grid-row-start: 3; 
+    grid-row-end: 4; 
+  }
+  .item7 {
+    grid-column-start: 4; 
+    grid-column-end: 5; 
+    grid-row-start: 3; 
+    grid-row-end: 4; 
+  }
+  .item8 {
+    grid-column-start: 3; 
+    grid-column-end: 4; 
+    grid-row-start: 4; 
+    grid-row-end: 5; 
+  }
+  .item9 {
+    grid-column-start: 4; 
+    grid-column-end: 5; 
+    grid-row-start: 4; 
+    grid-row-end: 5; 
   }
 /* Work styling ends*/
 
-/*Footer styling begins */
+/*Footer styling begins 
 .contactme a:hover{
     background-color:var(--highlight-text-color);
 }
