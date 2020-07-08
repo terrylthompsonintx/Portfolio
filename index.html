@@ -6,7 +6,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./assets/style/style.css">
-        <!-- <script src="https://kit.fontawesome.com/6fa007481e.js" crossorigin="anonymous"></script> -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
     </head>
     <body>
         <!-- Navigation use flex-->
@@ -34,52 +35,104 @@
             </div>
        </section>
        <hr>
-       <!-- Work .  Use Grid-->
-       <section  id='mywork' class='work'>
-            <div><h2>Past Projects</h2></div>
-            <div class='vl'></div>
-            <div class='grid-container'>
-                <div class='item1 project'>
-                    <h3>Varcation-Planner</h3>
-                    <a href="https://terrylthompsonintx.github.io/Vacation-Planner/" target="_blank"><img src="./assets/img/parks.png" alt="An image of the Vacation-Planner site"></a>
+       <section id ='mywork' >
+           <div class='container-fluid'>
+               <h3>Past Projects</h3>
+                <div class='row'>
+                    <div class='col-3'>
+                        <img src='./assets/img/hearth.png' class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Hearth</h5>
+                          <p class="card-text">Hearth is a photo sharing app. Users can create a group in which they can create posts to upload and share photographs.  Only group members can view posts. 
+                              Hearth is a full stack app that uses Node, Express, Jimp, Express-Fileupload and Mysql as well as Sequelize </p>
+                          <a href="https://infinite-ocean-27765.herokuapp.com/" class="btn btn-primary" target='_blank'>View App</a>
+                          <a href="" class="btn btn-secondary" target= '_blank'>View Github</a>
+                        </div> 
+                    </div>
+                    <div class='col-3'>
+                        <img src='./assets/img/parks.png' class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Vacation-Planner</h5>
+                          <p class="card-text">A front end application that allows users to plan a vacation at a national park. 
+                              The webpage consumes the National Park Service and Open Weather APIs to display campground and weather information. </p>
+                          <a href="https://terrylthompsonintx.github.io/Vacation-Planner/" class="btn btn-primary" target= '_blank'>  View App  </a>
+                          <a href="https://github.com/roxyvaught/Vacation-Planner" class="btn btn-secondary" target= '_blank'>View Github</a>
+                        </div> 
+                    </div>
+                    <div class='col-3'>
+                        <img src='./assets/img/weather.png' class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Weather-Dashboard</h5>
+                          <p class="card-text">A front end project that allows the user to get the forecast for their city. The webpage consumes the Open Weather API.
+                               </p>
+                          <a href="https://terrylthompsonintx.github.io/Weather-Dashboard/" class="btn btn-primary" target= '_blank'>View App</a>
+                          <a href="https://github.com/terrylthompsonintx/Weather-Dashboard" class="btn btn-secondary" target= '_blank'>View Github</a>
+                        </div> 
+                    </div>
+                    <div class='col-3'>
+                        <img src='./assets/img/horiseon.png' class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Horiseon</h5>
+                          <p class="card-text">A simple webpage. </p>
+                          <a href="https://terrylthompsonintx.github.io/Challenge-1-Horiseon/" class="btn btn-primary" target='_blank'>View App</a>
+                          <a href="https://github.com/terrylthompsonintx/Challenge-1-Horiseon" class="btn btn-secondary" target= '_blank'>View Github</a>
+                        </div> 
+                    </div>
+                    
                 </div>
-                <div class='item2 project'>
-                    <h3>Weather-Dashboard</h3>
-                    <a href="https://terrylthompsonintx.github.io/Weather-Dashboard/" target="_blank"><img src="./assets/img/weather.png" alt="An image of the Weather Dashboard site"></a>
+                <div class='row'>
+                    <div class='col-3'>
+                        <img src='./assets/img/daytimer.png' class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Day Timer</h5>
+                          <p class="card-text">An app that allows the user to plan their day. The user enters tasks through out the day.  The app uses the javascript setinterval method to track time.  </p>
+                          <a href="https://terrylthompsonintx.github.io/DayTimer/" class="btn btn-primary" target='_blank'>View App</a>
+                          <a href="https://github.com/terrylthompsonintx/DayTimer" class="btn btn-secondary" target= '_blank'>View Github</a>
+                        </div> 
+                    </div>
+                    <div class='col-3'>
+                        <img src='./assets/img/jsquiz.png' class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Javascrip Quiz</h5>
+                          <p class="card-text">A quiz game.   </p>
+                          <a href="https://terrylthompsonintx.github.io/jsQuiz/" class="btn btn-primary" target='_blank'>View App</a>
+                          <a href="https://github.com/terrylthompsonintx/jsQuiz" class="btn btn-secondary" target= '_blank'>View Github</a>
+                        </div> 
+                    </div>
+                    <div class='col-3'>
+                    <img src='./assets/img/password.png' class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Password Generator</h5>
+                          <p class="card-text">An app that prompts the users for the parameters of new password and generates a random one based on those parameters.
+                               </p>
+                          <a href="https://terrylthompsonintx.github.io/password-generator/" class="btn btn-primary" target='_blank'>View App</a>
+                          <a href="https://github.com/terrylthompsonintx/password-generator" class="btn btn-secondary" target= '_blank'>View Github</a>
+                        </div> 
+                    </div>
+                    <div class='col-3'>
+                    <img src='./assets/img/notetaker.png' class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Note Taker</h5>
+                          <p class="card-text">A note taking app with persistance.  The user can create,edit, and delete notes.  Persistance is through local storage. </p>
+                          <a href="https://notetaker--tt.herokuapp.com/" class="btn btn-primary" target='_blank'>View App</a>
+                          <a href="" class="btn btn-secondary" target= '_blank'>View Github</a>
+                        </div> 
+                    </div>
+                   
                 </div>
-                <div class='item3 project'>
-                    <h3>Horiseon</h3>
-                    <a href="https://terrylthompsonintx.github.io/Challenge-1-Horiseon/"target="_blank" ><img src="./assets/img/horiseon.png" alt="An imgage of the horiseon site"></a>
-                </div>
-                <div class='item4 project'>
-                    <h3>Day Timer</h3>
-                    <a href="https://terrylthompsonintx.github.io/DayTimer/" target="_blank"><img src="./assets/img/daytimer.png" alt="An image of the Daytimer site"></a>
-                </div>
-                <div class='item5 project'>
-                    <h3>Javascrip Quiz</h3>
-                    <a href="https://terrylthompsonintx.github.io/jsQuiz/" target="_blank"><img src="./assets/img/jsquiz.png" alt="An image of the Javascrip Quiz site"></a>
-                </div>
-                <div class='item6 project'>
-                    <h3>Password Generator</h3>
-                    <a href="https://terrylthompsonintx.github.io/password-generator/" target="_blank"><img src="./assets/img/password.png" alt="An image of the Password Generator site"></a>
-                </div>
-                
-                <div class='item7 project'>
-                    <h3>Run-Buddy</h3>
-                    <a href="https://terrylthompsonintx.github.io/run-buddy/" target="_blank"><img src="./assets/img/runbuddy.png" alt="An image of the Run-Buddy site"></a>
-                </div>
-               
-               
-            </div>  
-        </section>
+           </div>
+       </section>
+
+       <!-- Work -->
+
        <!--Footer Contact links-->
        <footer id='contact' class='contactme'>
            <h2>Contact Me</h2>
            <ul>
-               <li><a href="tel:15129142238"><img  src="./assets/img/cell.png" alt="An icon of a telephone" width='42px'></a></li>
-               <li><a href="mailto:terryLThompsonInTx@gmail.com"><img src="./assets/img/email.png" alt="An icon of email" width='42px'></a></li>
-               <li><a href="https://github.com/terrylthompsonintx" target="_blank"><img src="./assets/img/githubocto.png" src="An icon of Github" width='42px'></a></li>
-               <li><a href="https://www.linkedin.com/in/terrylthompson/" target="_blank"><img src="./assets/img/link.png" width='42px'></a></li>
+                <li><a href="tel:15129142238"><img  src="./assets/img/cell.png" alt="An icon of a telephone" width='42px'></a></li>
+                <li><a href="mailto:terryLThompsonInTx@gmail.com"><img src="./assets/img/email.png" alt="An icon of email" width='42px'></a></li>
+                <li><a href="https://github.com/terrylthompsonintx" target="_blank"><img src="./assets/img/githubocto.png" src="An icon of Github" width='42px'></a></li>
+                <li><a href="https://www.linkedin.com/in/terrylthompson/" target="_blank"><img src="./assets/img/link.png" width='42px'></a></li>
                 <li><a href="TerryThompsonWebDeveloperResume.pdf" download="TerryThompsonWebDeveloperResume.pdf"><img src="./assets/img/resume.png" width='42px'></a></li>
             </ul>
        </footer>

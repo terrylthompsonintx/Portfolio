@@ -129,7 +129,7 @@ a:link, a:visited {
     max-height: 100%;
 }
 .item1 {
-  padding-right: 20px;
+  /*padding-right: 20px;*/
   grid-column-start: 1; 
   grid-column-end: 3; 
   grid-row-start: 2; 
